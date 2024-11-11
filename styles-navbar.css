@@ -1,0 +1,52 @@
+.navbar {
+    width: 95%;
+    padding-left: 3%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;   
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -15%;
+    cursor: pointer;
+}
+
+.links li {
+    padding-right: 10%;
+    list-style: none;
+    font-family: "Open Sans";
+    font-weight: 500;    
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.logo {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .links {
+        display: none;
+    }
+    .menu {
+        display: inline-flex;
+    }
+}

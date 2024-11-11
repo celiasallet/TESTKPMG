@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML KPMG Layout Test</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-header.css"> 
+        <link rel="stylesheet" href="styles-chapitre1.css"> 
+        <link rel="stylesheet" href="styles-chapitre2.css"> 
+        <link rel="stylesheet" href="styles-chapitre3.css">
+        <link rel="stylesheet" href="styles-contacts.css"> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="card-container" id="cardContainer">
+            <!-- Cards will be generated dynamically here -->
+        </div>
+        
+        <!-- Modal for email form -->
+        <div id="emailModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalName">Contact</h2>
+                <form id="emailForm">
+                    <label for="recipientEmail">To:</label>
+                    <input type="email" id="recipientEmail" name="recipientEmail" readonly>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Email</button>
+                </form>
+            </div>
+        </div>
+</body>
+<script src="script-contact.js"></script>
+</html>

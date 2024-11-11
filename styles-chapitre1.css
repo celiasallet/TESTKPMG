@@ -1,0 +1,211 @@
+/* Chapitre 1 container */
+.chapitre1 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem;   
+    padding-bottom: 0 !important;
+}
+
+.texte1 {
+    padding: 2rem;
+    padding-right: 0 !important;
+    width: 60% !important;
+    color: #00338d;
+    border-left: 10px solid blueviolet;
+    border-top-left-radius: 15px;  
+    border-bottom-left-radius: 15px;  
+}
+
+.texte1 h2, .texte2 h2 {
+    text-align: left;
+    font-weight: 600;
+}
+
+.texte2 {
+    color: #00338d;
+    padding: 3rem;
+}
+
+/* Slide show caroussel */
+.show {
+    width: 80%;
+    height: 333px;
+    overflow-x: auto;
+    overflow-y: hidden;   
+}
+
+.show ul {
+    display: flex;
+    height: 100%; 
+    transition: all 0.5s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.show li {
+    width: auto;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.show li img {
+    width: auto; 
+    height: 100%; 
+    object-fit: contain; 
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.show li:hover img {
+    transform: scale(1.1);
+}
+
+.show ul li:hover ~ li {
+    transform: translateX(-30px);
+}
+
+.show ul li:hover {
+    z-index: 10; 
+    transform: translateX(0);}
+
+.show ul li:last-child {
+    right: 0; 
+}
+.show ul li:first-child {
+    left: 0; 
+}
+
+/* Tabs texts switch */
+.tabs-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    text-align:center;
+}
+
+.tabs {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding:0px;
+  list-style:none;
+  background:white;
+  box-shadow:0px 5px 20px rgba(253, 52, 156, 0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabst {
+    margin: 2rem;
+    font-size:15px;
+    padding: 2rem !important;
+    list-style:none;
+    background:white;
+    box-shadow:0px 5px 20px rgba(253, 52, 156, 0.1);
+    display:inline-block;
+    border-radius:50px;
+    position:relative;
+    transition-duration:0.4s;
+}
+
+.tabst h2 {
+    padding-left: 1rem;
+}
+
+.tabs a {
+    text-decoration:none;
+    font-size: 0.9rem;
+    color:#00338d;
+    font-weight: 700;
+    padding:10px 20px;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    transition-duration:0.6s;
+}
+
+.tabs a.active {
+    color:#fff;
+}
+
+.tabs a i {
+    margin-right:5px;
+}
+
+.tabs .selector {
+    height:100%;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;
+    border-radius:50px;
+    transition-duration:0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #05abe0;
+    background: -moz-linear-gradient(45deg, #1E49E2 0%, #8200f4 100%);
+    background: -webkit-linear-gradient(45deg, #1E49E2 0%,#8200f4 100%);
+    background: linear-gradient(45deg, #1E49E2 0%,#8200f4 100%);
+}
+
+/* tablettes/ phones */
+@media (max-width: 1200px) {
+    .chapitre1 {
+        width: 100%;
+        display: block;
+        padding: 0; 
+    }
+
+    .texte1 {
+        margin-bottom: 2rem;
+        width: 90% !important;
+        padding: 1rem;       
+    }
+
+    .texte2 {
+        padding: 0;
+    }
+
+    .tabs-container {
+        padding: 0;
+        margin: 0;    
+    }
+
+    .tabst h2 {
+        padding-left: 2rem;
+    }
+
+    .tabst {
+        padding: 0%;
+        margin: 0;
+        width: 85%;
+    }
+
+    .show {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .show ul {
+        padding-left: 0;
+        width: 90%;
+    }
+
+    .wrapper {
+        width: 100% !important;
+        margin-bottom: 3rem;
+    }    
+}

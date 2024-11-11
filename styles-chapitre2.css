@@ -1,0 +1,61 @@
+/* chapter 2 and interactive chart as canvas */
+.chapitre2 {
+    display: flex;
+    width: 100%; 
+    gap: 2rem;  
+    justify-content: center;
+    align-items: center;
+    color: #00338D;
+    margin-bottom: 2rem !important;
+}
+
+.part1 {
+    width: 45%;
+    background-color: #00338D;
+    border-radius: 6px ;
+    height: fit-content;    
+    margin-left: 0;    
+}
+
+.part2 {
+    width: 40%;
+    border-left: 10px solid blueviolet;
+    border-top-left-radius: 15px;   /* Arrondi du coin supérieur gauche */
+    border-bottom-left-radius: 15px; 
+    padding: 2rem;
+}
+
+canvas {
+    margin: 2rem;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+
+    .chapitre2 {
+        width: 100%; 
+        flex-direction: column-reverse;
+        gap: 0;  
+        margin-bottom: 2rem !important;
+        align-items: center;
+        color: #00338D;
+    }
+
+    .part1 {
+        width: 93%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .part2 {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        width: 89%;
+    }
+
+    canvas {
+        width: 100%;
+    }
+}

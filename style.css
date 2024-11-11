@@ -1,0 +1,98 @@
+/* general settings */
+* {
+    font-family: "Open sans", Arial, Helvetica, sans-serif !important;
+}
+
+html, body {
+    overflow-x: hidden; 
+    width: 100%;  
+    height: 100%;        
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white !important;
+}
+
+main {
+    padding: 0rem 5rem 1rem 5rem;
+    height: fit-content;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4.3rem;
+    transform: scaleX(0.8);
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    text-shadow: 2px 2px 2cm rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin: 0%;
+    padding: 0%;
+    font-weight: 700;
+    text-align: left; 
+}
+
+h3 {
+    margin: auto;
+    font-size: 4rem !important;
+    font-weight: 200;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 15px; 
+    padding-right: 2rem;
+}
+
+h4 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: larger;
+}
+
+.sub2 {
+    font-size: larger;
+    text-align: right;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.unit {
+    font-size: 1rem !important;
+}
+
+/* phone tablettes */
+@media (max-width: 1300px) {
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 3rem; 
+    }
+
+    p {
+        width: 98%;
+    }
+}
+ 
+/* ---------------- */
+.footer {
+    background-color: #1E49E2; 
+    padding: 1rem;
+    text-align: center; 
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}

@@ -1,0 +1,111 @@
+header {
+    width: 100%;
+    top: 0;
+}
+/* la width du cadre */
+.background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-box {
+    width: 100%;
+    background: none;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    height: 25vh;
+    padding: 20px 20px 1.5rem 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.title-box h1, .title-box h2 {
+    margin: 0;
+}
+
+.title-image {
+    height: 100%;
+    max-width: 50%; 
+    object-fit: cover;
+    object-position: center; 
+    padding-right: 5rem;
+}
+
+.title-box h2  {
+    padding-left: 2rem;
+}
+/* button to chapters  */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px;
+    width: auto;
+    margin: 0 auto; 
+}
+
+button {
+    margin: 0.5rem;
+    border-style: none;
+    background: none;
+} 
+
+button a {
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #00338D; 
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button a:hover {
+    background: linear-gradient(to right, #1E49E2, #7213EA);
+    box-shadow: 0px 10px 20px rgba(114, 19, 234, 0.5);
+    color: #fff !important; 
+}
+
+button:hover {
+    transform: translateY(-4px) !important;  
+}
+
+/* phones works with tablette */
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title-box h2  {
+        padding-left: 1.5rem;
+    }
+
+    .title-box {
+        align-items: center;
+        height: 20vh;
+        height: auto;
+        box-shadow: none;
+        color: white;
+        padding-left: 5px;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+  
+    .title-image {
+        display: none;
+    }
+}
