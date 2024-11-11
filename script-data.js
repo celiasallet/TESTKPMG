@@ -95,3 +95,28 @@ const dataOriginal = {
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, config);
+
+
+  // pour faire en sorte que la chart soit lisible sur telephone
+  const canvas = document.getElementById('myChart');
+  let scale = 1;
+
+canvas.addEventListener('touchstart', (e) => {
+    const touch1 = e.touches[0];
+    const touch2 = e.touches[1];
+    if (touch1 && touch2) {
+        const distance = Math.hypot(touch2.pageX - touch1.pageX, touch2.pageY - touch1.pageY);
+        scale = distance / 100; 
+        canvas.style.transform = `scale(${scale})`; 
+    }
+});
+
+canvas.addEventListener('touchmove', (e) => {
+    if (e.touches.length == 2) {
+        const touch1 = e.touches[0];
+        const touch2 = e.touches[1];
+        const distance = Math.hypot(touch2.pageX - touch1.pageX, touch2.pageY - touch1.pageY);
+        scale = distance / 100;
+        canvas.style.transform = `scale(${scale})`;
+    }
+});
