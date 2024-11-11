@@ -126,7 +126,9 @@ p {
     h2 {
         font-size: 2.5rem;
     }
-
+    .card-container {
+        width: 95% !important;
+    }
     .card-position p {
         font-size: 2rem;
     }

@@ -55,7 +55,7 @@
 }
 
 .vignette {
-    height: 24vh;
+    height: fit-content;
     background: none;
     color: white;
     padding: 16px;
@@ -77,7 +77,7 @@
     padding: 1rem;
     border: 2px inset #00338D;
     border-radius: 6px;
-    height: 24vh;
+    height: fit-content;
 }
 
 /* drop layout */
