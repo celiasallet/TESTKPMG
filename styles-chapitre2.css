@@ -27,13 +27,8 @@
 
 canvas {
     margin: 2rem;
-    width: 50%;
 }
 
-#myChart {
-    width: 100%;  
-    height: auto; 
-}
 @media (max-width: 1200px) {
 
     .chapitre2 {
@@ -51,6 +46,10 @@ canvas {
         margin-bottom: 2rem;
     }
 
+    canvas {
+        margin: 0.1rem;
+    }
+    
     .part2 {
         width: 100%;
         margin-top: 0;
