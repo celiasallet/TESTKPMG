@@ -44,7 +44,7 @@ function createVignette(data) {
         const vignetteHTML = `
             <section class="sub-menu-parent" tabindex="0">
                 <article class="vignette">
-                    <h3>${item.totalAverage}<span class="unit">${unit}</span></h3>
+                    <p class="number">${item.totalAverage}<span class="unit">${unit}</span></p>
                     <p class="sub2">${item.question}</p>
                 </article>
                 <article class="dropdown-content">
@@ -128,7 +128,7 @@ function addQuestionsToPage(data) {
         section.setAttribute('tabindex', '0');
         section.innerHTML = `
             <article class=".vignette2" id="color">
-                <h3>${item.totalAverage}<span class="unit">${unit}</span></h3>
+                <p class="number">${item.totalAverage}<span class="unit">${unit}</span></p>
                 <p class="sub2">${item.question}</p>
             </article>
             <article class="dropdown-content" id="unfold">

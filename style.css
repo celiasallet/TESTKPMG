@@ -21,8 +21,8 @@ main {
     height: fit-content;
 }
 
+/* title */
 h1 {
-    font-weight: 400;
     font-size: 4.3rem;
     transform: scaleX(0.8);
     margin: 0%;
@@ -31,7 +31,26 @@ h1 {
     text-shadow: 2px 2px 2cm rgba(0, 0, 0, 0.2);
 }
 
-h2 {
+/* sub */
+h2 {transform: scaleX(0.8);
+    font-size: 1.3rem;
+    margin: 0%;
+    padding: 0%;
+    font-weight: 500;
+    text-align: left; 
+}
+
+/* chapter  */
+h3 {
+    font-size: 1.4rem;
+    margin: 0%;
+    padding: 0%;
+    font-weight: 700;
+    text-align: left; 
+}
+
+/* title */
+h4 {
     font-size: 1.3rem;
     margin: 0%;
     padding: 0%;
@@ -39,24 +58,35 @@ h2 {
     text-align: left; 
 }
 
-h3 {
+.contact{
+    font-weight: 700 !important;
+}
+
+/* titre canvas */
+h5 { color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+/* sur vignettes */
+.number {
     margin: auto;
     font-size: 4rem !important;
     font-weight: 200;
     text-align: right;
     margin-bottom: 2rem;
+   
+}
+
+.unit {
+    font-size: 1rem !important;
 }
 
 p {
     font-size: 15px; 
     padding-right: 2rem;
-}
-
-h4 {
-    color: white;
-    font-weight: 500;
-    text-align: center;
-    font-size: larger;
 }
 
 .sub2 {
@@ -65,10 +95,6 @@ h4 {
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 0;
-}
-
-.unit {
-    font-size: 1rem !important;
 }
 
 /* phone tablettes */

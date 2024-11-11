@@ -34,9 +34,7 @@ header {
     padding-right: 5rem;
 }
 
-.title-box h2  {
-    padding-left: 2rem;
-}
+
 /* button to chapters  */
 .button-group {
     display: flex;
@@ -86,10 +84,6 @@ button:hover {
         align-items: center;
     }
     
-    .title-box h2  {
-        padding-left: 1.5rem;
-    }
-
     .title-box {
         align-items: center;
         height: 20vh;
