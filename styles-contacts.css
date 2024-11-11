@@ -97,7 +97,7 @@
 }
 
 .profile-image img {
-  width: 100%;
+  width: 6vw;
 }
 
 .card-cta {
@@ -146,7 +146,11 @@
   width: 100%;
   margin-bottom: 10px;
 }
-
+p#name {
+  font-size: larger;
+  margin-bottom: 0;
+  font-weight: 700 !important;
+}
 /* tablette and phone */
 @media (max-width: 1300px) {
     .card-container {
@@ -182,11 +186,6 @@
       display: none;  
     }
     
-    #name {
-
-      font-weight: 600 !important;
-    }
-
     .contact {
       font-size: 1.2rem;
     }
