@@ -7,15 +7,13 @@ function closeModal() {
     document.getElementById("emailModal").style.display = "none";
 }
 
-// Optional: Close modal when clicking outside of it
 window.onclick = function(event) {
     const modal = document.getElementById("emailModal");
-    if (event.target === modal) {
+    if (window.innerWidth > 900 && event.target === modal) {
         closeModal();
     }
-}
+};
 
-// Contact details array
 const contacts = [
     {
         name: "Alex Johnson",
@@ -61,7 +59,7 @@ const contacts = [
     }
 ];
 
-// Function to dynamically populate cards
+
 function generateCards() {
     const cardContainer = document.getElementById("cardContainer");
 
@@ -94,7 +92,6 @@ function generateCards() {
     });
 }
 
-// Modal control functions
 function openModal(email, name) {
     document.getElementById("recipientEmail").value = email;
     document.getElementById("modalName").innerText = `Contact ${name}`;
@@ -105,5 +102,4 @@ function closeModal() {
     document.getElementById("emailModal").style.display = "none";
 }
 
-// Initialize cards on page load
 window.onload = generateCards;
