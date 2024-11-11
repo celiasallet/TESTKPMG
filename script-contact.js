@@ -3,16 +3,22 @@ function openModal(email) {
     document.getElementById("emailModal").style.display = "flex";
 }
 
+function openModal() {
+    if (window.innerWidth > 768) {
+        document.getElementById("emailModal").style.display = "block";
+    }
+}
+
 function closeModal() {
     document.getElementById("emailModal").style.display = "none";
 }
 
 window.onclick = function(event) {
     const modal = document.getElementById("emailModal");
-    if (window.innerWidth > 900 && event.target === modal) {
+    if (event.target === modal && window.innerWidth > 768) {
         closeModal();
     }
-};
+}
 
 const contacts = [
     {

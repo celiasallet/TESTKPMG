@@ -146,11 +146,13 @@
   width: 100%;
   margin-bottom: 10px;
 }
+
 p#name {
   font-size: larger;
   margin-bottom: 0;
   font-weight: 700 !important;
 }
+
 /* tablette and phone */
 @media (max-width: 1300px) {
     .card-container {
@@ -170,7 +172,7 @@ p#name {
     .card {
       height: fit-content;
       justify-content: space-evenly;
-      min-width: 40% !important; 
+      min-width: 50% !important; 
       margin-left: -50px; 
     }
   
