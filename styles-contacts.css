@@ -28,7 +28,7 @@
 .card {
   cursor: pointer;
   max-width: 20% !important;
-  height: 50vh !important;
+  height: fit-content;
   padding: 1.5rem;
   border-radius: 6px;
   background: linear-gradient(to top, #1E49E2 10%, #7213EA 90%) !important;
@@ -158,18 +158,15 @@
     .profile-image {
       display: none;
     }
-      
-    .profile-details p {
-      font-size: 0.7rem !important;
-    }
     
     .card-cta p {
       font-size: 1rem;
     }
     
     .card {
+      height: fit-content;
       justify-content: space-evenly;
-      min-width: 35% !important; 
+      min-width: 40% !important; 
       margin-left: -50px; 
     }
   
@@ -186,6 +183,7 @@
     }
     
     #name {
+
       font-weight: 600 !important;
     }
 
