@@ -171,7 +171,7 @@
     }
 
     #color {
-        height: 25vh;
+        height: 28vh !important;
     }
 
     .sub-menu-parent {
