@@ -22,7 +22,6 @@ const data = [
     }
 ];
 
-// Function to determine unit based on the total average value
 function getUnit(average) {
     if (average > 50 || (typeof average === "string" && average.includes("%"))) {
         return "%";
@@ -34,13 +33,11 @@ function getUnit(average) {
     return "";
 }
 
-// Function to create each vignette dynamically
 function createVignette(data) {
     const container = document.getElementById("vignettes-container");
     data.forEach(item => {
         const unit = getUnit(item.totalAverage);
 
-        // Vignette template
         const vignetteHTML = `
             <section class="sub-menu-parent" tabindex="0">
                 <article class="vignette">
@@ -72,12 +69,10 @@ function createVignette(data) {
             </section>
         `;
 
-        // Append vignette to the container
         container.insertAdjacentHTML("beforeend", vignetteHTML);
     });
 }
 
-// Initialize vignettes
 createVignette(data);
 
 
@@ -108,11 +103,9 @@ const questionsData = [
     }
 ];
 
-// Fonction pour générer les sections avec les données
 function addQuestionsToPage(data) {
     const container2 = document.getElementById("vignettes-container2");
     data.forEach(item => {
-        // Déterminer l'unité à afficher en fonction de la scale
         let unit = "";
         if (item.scale === "%") {
             unit = "%";
@@ -122,7 +115,6 @@ function addQuestionsToPage(data) {
             unit = "/10";
         }
 
-        // Créer la structure HTML pour chaque vignette avec les données de la question
         const section = document.createElement('section');
         section.classList.add('sub-menu-parent2', 'sub-menu-parent');
         section.setAttribute('tabindex', '0');
@@ -155,10 +147,8 @@ function addQuestionsToPage(data) {
             </article>
         `;
 
-        // Ajouter la nouvelle section à la page
         container2.appendChild(section);
     });
 }
 
-// Appeler la fonction pour ajouter dynamiquement les vignettes
 addQuestionsToPage(questionsData);
