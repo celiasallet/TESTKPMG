@@ -160,13 +160,18 @@
         gap: 20px;
         flex-direction: column-reverse;
     }
-
+    .number {
+        font-size: 3rem !important;
+    }
+    .vignette {
+        height: 30vh;
+    }
     .image {
         margin-top: 2rem;
     }
 
     #color {
-        height: 20vh;
+        height: 25vh;
     }
 
     .sub-menu-parent {

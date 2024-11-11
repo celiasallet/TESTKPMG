@@ -82,7 +82,7 @@ function generateCards() {
                     <img src="Imagery/blank-profile-picture.png" alt="Profile Image">
                 </div>
                 <div class="profile-details">
-                    <h2 id="name">${contact.name}</h2>
+                    <p id="name">${contact.name}</p>
                     <div class="coor-details">
                         <p id="email">${contact.email}</p>
                         <p id="phone">${contact.phone}</p>

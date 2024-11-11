@@ -89,6 +89,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: white;
+  
 }
 
 .profile-image {
@@ -164,6 +165,7 @@
     
     .profile-details h2 {
       font-size: 1rem !important;
+      align-items: end;
     }
       
     .profile-details p {
@@ -176,7 +178,7 @@
     
     .card {
       justify-content: space-evenly;
-      height: 40vh !important;
+      height: 43vh !important;
       min-width: 35% !important; 
       margin-left: -50px; 
     }
