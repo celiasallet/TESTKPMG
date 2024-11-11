@@ -24,7 +24,8 @@ main {
 /* title */
 h1 {
     font-size: 4.3rem;
-    transform: scaleX(0.8);
+    transform: scaleX(0.8) !important;
+    font-weight: 500;
     margin: 0%;
     padding: 0%;
     text-align: center;
