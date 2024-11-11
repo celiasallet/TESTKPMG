@@ -177,11 +177,11 @@ p#name {
     }
   
     .card:nth-child(odd) { 
-      transform: rotate(5deg) translateY(-5px);
+      transform: rotate(2deg) translateY(-2px);
     }
   
     .card:nth-child(even) { 
-      transform: rotate(-5deg) translateY(5px); 
+      transform: rotate(-2deg) translateY(2px); 
     }
 
     .card-container::-webkit-scrollbar {
